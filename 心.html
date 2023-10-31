@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#Tabs1 {
+	height: 100%;
+}
+#Tabs1 #tabs-1 {
+	overflow-y: scroll;
+	height: 640px;
+}
+#Tabs1 #tabs-2 {
+	overflow-y: scroll;
+	height: 640px;
+}
+#Tabs1 #tabs-3 {
+	overflow-y: scroll;
+	height: 640px;
+}
+#title {
+	font-size: 42px;
+	background: url(images/bg.jpg);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#foot {
+	background-color: #D7D6D6;
+}
+body {
+	background-image: url(images/bg3.jpg);
+}
+</style>
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td height="136" id="title">项目三 网页元素的插入和设置</td>
+    </tr>
+    <tr>
+      <td height="720" valign="top"><div id="Tabs1">
+        <ul>
+          <li><a href="#tabs-1"> 图像编辑</a></li>
+          <li><a href="#tabs-2">文本处理</a></li>
+          <li><a href="#tabs-3">多媒体</a></li>
+</ul>
+        <div id="tabs-1">
+          <p>1. 常用的图像格式</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>1. 常用的图像格式</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>1. 常用的图像格式</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>1. 常用的图像格式</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>1. 常用的图像格式</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>1. 常用的图像格式</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+          <p>2. 插入与编辑图像</p>
+        </div>
+        <div id="tabs-2">
+          <p>内容 2</p>
+        </div>
+        <div id="tabs-3">
+          <p>内容 3</p>
+        </div>
+</div></td>
+    </tr>
+    <tr>
+      <td height="48" align="center" id="foot"> 肥城市第三中学&reg;数字媒体版权所有</td>
+    </tr>
+  </tbody>
+</table>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>

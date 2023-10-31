@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#Tabs1 {
+	height: 100%;
+}
+#Tabs1 #tabs-1 {
+	overflow-y: scroll;
+	height: 107%;
+	background-color: #00FFCB;
+}
+#Tabs1 #tabs-2 {
+	overflow-y: scroll;
+	height: 100%;
+}
+#Tabs1 #tabs-3 {
+	overflow-y: scroll;
+	height: 640px;
+}
+#title {
+	font-size: 42px;
+	background: url(../images/bg.jpg);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#foot {
+	background-color: #D7D6D6;
+}
+body {
+	height: 67%;
+	background-color: #00EAF5;
+	color: undefined;
+}
+</style>
+<link href="../jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('../2.gif')">
+
+<table width="882" height="802" border="0" align="center">
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#0AE4D3" style="text-align: center; font-size: 36px; font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; color: #170EE3; text-shadow: 4px 4px 3px #FFFFFF; background-color: #D31D5B; background-image: url(file:///E|/%E8%B4%BE%E7%BB%AA%E8%BD%A9/index.html/666/2.gif);">网页元素的插入跟设置</td>
+    </tr>
+    <tr>
+      <td height="352" valign="top" bgcolor="#FFFFFF"><div id="Tabs1">
+        <ul>
+          <li><a href="#tabs-1">图像编辑</a></li>
+          <li><a href="#tabs-2">文本处理</a></li>
+          <li><a href="#tabs-3">多媒体</a></li>
+          <li><a href="#tabs-4">Tab 4</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p style="font-size: 36px; color: #FF0004;">1.1 常用的图像格式</p>
+          <p>目前在网页中可以使用的图像包括JPEG，GIF和PNG格式，下面分别列出了他们各自的特点：</p>
+          <p>JPEG格式：适于表现色彩丰富，具有连续色调的图像，如各种照片。</p>
+          <p>GIF格式：最多只能包含256种颜色，适合表现色调不连续或具有大面积单一颜色的图像。</p>
+          <p>PNG格式：集JPEG和GIF格式的优点于一身，既能处理照片式的精美图像，又能包含透明区域，且可以包含图层等信息，是Fireworks的默认图像格式。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.2 插入与编辑图像</p>
+          <p>在Dreamweaver CC中插入图像的方法非常简单。</p>
+          <p>a.首先在要插入图像的位置单击确定插入点，然后单击&ldquo;常用&rdquo;插入栏中的&ldquo;图像&rdquo;按钮，打开&ldquo;选择图像源文件&rdquo;对话框，从中选择要插入的图像，然后单击&ldquo;确定&rdquo;按钮即可。</p>
+          <p>b.在要插入图像的位置单机确定插入点，然后单机插入-图像，打开&ldquo;选择图像源文件&rdquo;对话框，从中选择要插入的图像，然后单击&ldquo;确定&rdquo;按钮即可</p>
+          <p>c.快捷键Ctrl+Alt+I</p>
+          <p style="font-size: 36px; color: #FF0004;">1.3 图像占位符</p>
+          <p>在制作网页时，若想要插入一幅图像，但暂时没有找到合适的图像，这就需要用到图像占位符。插入图像占位符后，用户可随时替换为真正的图像。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.3.1 插入图像占位符</p>
+          <p>选择要插入的位置，点击插入→图像对象→图像占位符，打开&ldquo;图像占位符&rdquo;对话框，在&ldquo;名称&rdquo;中输入该占位符标签，必须以字母开头，并且只能包含字母和数字，不能使用空格。在&ldquo;替换文本&rdquo;中输入描述该图像的文本。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.3.2 将图像占位符替换为图像</p>
+          <p>通过底部属性面板可以将图像中占位符替换为真正的图像。在&ldquo;源文件&rdquo;处浏览图像所在位置，点击图像，再点击&ldquo;确定&rdquo;即可。</p>
+          <p>技术专题：预览网页时不显示图像的问题</p>
+          <p>这种情况有两种可能：</p>
+          <p>图像使用的是绝对路径：如果如想使用的是绝对路径，并且路径用了本地盘符，则上传后就找不到图像文件。打开&ldquo;属性&rdquo;面板，发现图像的&ldquo;源文件&rdquo;显示为&ldquo;file:F:Web/img/1.gif&rdquo;，这就是绝对路径。若要使用相对路径，就改为&ldquo;img/1.gif&rdquo;</p>
+          <p>大小写问题提：图形文件名或图形文件所在的目录名中有大写字母或中文。因为服务器所在的操作系统一般是UNIX或Linux平台，而UNIX系统是区分文件大小写的。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.4 交互式图像</p>
+          <p>交互式图像又名鼠标经过图像，是指当鼠标经过衣服图像时，它会变成另一副图像，并且带有连接功能。因此导航条图像要由两幅图像组成。</p>
+          <p>点击插入→图像对象→鼠标经过图像，打开&ldquo;插图鼠标经过图像&rdquo;对话框。填入对应的图像路径即可。</p>
+          <p>由于交换的图像会进行压缩或展开以适应原有图像的尺寸，这样容易造成图像失真，所以尽量选择尺寸一致的图像</p>
+          <p style="font-size: 36px; color: #FF0004;">1.5 网页背景</p>
+          <p style="font-size: 36px; color: #FF0004;">1.5.1 设置网页背景颜色</p>
+          <p>点击修改→页面属性，或在&ldquo;属性&rdquo;面板中点击&ldquo;页面属性&rdquo;打开&ldquo;页面属性&rdquo;对话框，在&ldquo;背景颜色&rdquo;处选择背景颜色。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.5.2 设置网页背景</p>
+          <p>在&ldquo;页面属性&rdquo;的&ldquo;背景图像&rdquo;中选择图片的路径，点击确定即可。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.6 设置外部图像编辑器</p>
+          <p>当把选择好的图片插入Dreamweaver CC中时，可能这些图片达不到你想要的效果，这时就需要对图像进行编辑，Dreamweaver CC虽然可以设置图像属性，但毕竟不是专门的图像编辑软件，这时就需要用到外部图像编辑器来对图像源文件进行处理。</p>
+          <p>步骤：</p>
+          <p>a.点击编辑→首选参数，打开&ldquo;首选参数&rdquo;对话框，在左侧选择&ldquo;文件类型/编辑器&rdquo;。</p>
+          <p>b.在&ldquo;拓展名&rdquo;列表中可以添加或删除文件类型。</p>
+          <p>c.选中一种文件类型，在编辑器中点击&ldquo;+&rdquo;号</p>
+          <p>d.选择想用的图像编辑软件。</p>
+          <p>e.选中图像编辑器，点击设为主要</p>
+          <p>f.选中图像，在底部&ldquo;属性&rdquo;面板中点击编辑即可使用外部图像编辑器了。</p>
+          <p style="font-size: 36px; color: #FF0004;">1.7 图像映射</p>
+          <p>图像映射又名&ldquo;热点链接&rdquo;，是将图像划分为若干个区域，每个区域被称为一个热区，每个热区分别设置不同的超链接。热区可以是不同形状。</p>
+          <p>设置图像映射：</p>
+          <p>选中图像，在&ldquo;属性面板&rdquo;左下角&ldquo;矩形热点工具&rdquo;，&ldquo;圆形热点工具&rdquo;，&ldquo;多边形热点工具&rdquo;。</p>
+          <p>点击任意工具，在图像上选择一片区域创建热区。</p>
+          <p>可以在&ldquo;替换&rdquo;中输入文字说明或提示。在浏览器中，当鼠标指向该热区时就会显示此处输入的文字。</p>
+          <p>保存文件，按F12预览即可查看。</p>
+          <p>若要选择多个热区，可点击&ldquo;属性&rdquo;面板的&ldquo;指针热点工具&rdquo;然后按住Shift，对热区进行选择。或者全选Ctrl+A。</p>
+        </div>
+        <div id="tabs-2">
+          <p>2.1输入文本</p>
+          <p>a.在Dreamweaver CC中输入文本的方法非常简单，只要将插入点定位在网页的某个位置，然后输入文本就可以了。</p>
+          <p>b.对于大量的外部文本，用户可利用剪贴板将其拷贝到网页文档中。</p>
+          <p>2.2设置文本的段落格式和字符格式</p>
+          <p>默认情况下，输入文本的字体，字号等，与该网页“页面属性”中设置的相同。用户也可利用“属性”面板为文本设置系统提供的格式化样式（段落，标题一，标题二等），或者直接设置所选文本的字体，大小，颜色，粗体，斜体，对齐方式和列表方式等。</p>
+          <p>2.3添加空格</p>
+          <p>默认情况下，在Dreamweave中添加空格时，若直接在文档窗口中选中文本，并按下键盘上的空格键只能输入一个空格，连续按下空格键光标将不会向后移动。</p>
+          <p>连续输入空格的几种方法：</p>
+          <p>A.按下Ctrl+Shift+空格即可在网页中输入连续的空格</p>
+          <p>B.在插入面板中切换文本分类，然后单击该分类中的最后一个按钮，在弹出的下拉列表中选中不换行空格选项可实现空格的连续输入。</p>
+          <p>C.在代码视图中合适的位置上输入“&amp;.nbsp”，可以为网页文本添加一个空格，若需要连续多个空格，可以使用“；”，将若干个“&amp;.nbsp”分开，从而实现连续空格键的输入。</p>
+          <p>2.4水平线和特殊字符</p>
+          <p>如果网页文档由很长的内容构成，可在内容中间插入水平线，从而使网页内容更容易理解，阅读起来也更轻松。要插入水平线，先将插入点定位在要插入水平线的位置，然后选择“插入记录”&gt;&quot;HTML&quot;&gt;&quot;水平线&quot;菜单即可。</p>
+          <p>要插入特殊字符可以选择“插入记录”&gt;&quot;HTML&quot;&gt;&quot;特殊字符&quot;菜单，然后在弹出的菜单中选择相应的特殊字符，如果在“特殊字符”菜单下没有找到需要的特殊字符，可以通过选择该菜单中最下面的“其他字符”命令打开“插入其他字符”对话框。</p>
+          <p>2.5项目列表</p>
+          <p>2.5.1无序列表</p>
+          <p>无序列表指的是以&ldquo;.&rdquo;&ldquo;，&rdquo;&ldquo;。&rdquo;等符号开头，并且没有顺序的列表项目。无序列表 中通常不会有顺序级别的区别得到           区别，只在文字的签名使用一个项目符号作为每个列表项的前缀。</p>
+          <p>2.5.2有序列表</p>
+          <p>有序列表以数字或英文字母开头，并且每个项目都会有先后顺序。</p>
+          <p>2.5.3定义项目列表</p>
+          <p>编号列表和项目前表符还可以自行编辑</p>
+          <p>列表属性对话框主要参数选项的具体作用：</p>
+          <p>a.列表类型下拉列表：可以选择列表类型。</p>
+          <p>b.样式下拉列表：设置选择的列表样式。</p>
+          <p>c.新建样式 下拉列表：可以选择列表的项目样式。</p>
+          <p>d.开始计数文本框：可以设置编号列表的起始编号数字，只结编号列表作用。</p>
+          <p>e.重设文档框：可以重新设置编号列表编号数字，只对编号列表作用。</p>
+        </div>
+        <div id="tabs-3">
+          <p>3.1认识多媒体</p>
+          <p>多媒体技术是一种把文本，图像，动画，声音，结合在一起，通过计算机进行综合处理和控制，能支持完成一系列交互式操作的信息技术。</p>
+          <h4>3.3插入flash动画</h4>
+          <p>flash是矢量化的web交互式动画制作工具。 将光标放在要插入的位置，点击插入—媒体—&gt;swf或快捷键Ctrl+alt+f,打开选择swf对话框，选择相应的文件。</p>
+          <p>在属性面板的wmode中可将flash动画背景设为透明。</p>
+          <p>swf文件的属性面板主要参数选项的具体作用：</p>
+          <p>ID:在左侧的标记文本框中可输入swf文件的唯一ID名称。</p>
+          <p>[高]和[宽]文本框：可以在文本框中输入以像素为单位的宽和高指定影片的宽度和高度。</p>
+          <p>[文件]文本框：指定swf文件的路径。单击文件夹按钮选择文件，也可以直接输入路径。</p>
+          <p>[背景颜色]文本框：指定动画区域的背景颜色，在不播放动画识别可以显示此颜色。</p>
+          <p>[编辑]按钮：单击该按钮启动flash来修改fla文件。如果计算机上没有安装flash则会禁用此选项。</p>
+          <p>[类]下拉列表：用于对影片应用css类。</p>
+          <p>[循环]复选框：选中该复选框可以连续播放动画，如果没有循环则影片将播放一次，然后停止。</p>
+          <p>[自动播放]按钮：选中该复选框，在加载页面时自动播放影片</p>
+          <p>[垂直边距]和[水平边距]文本框：可以指定影片上、下、左、右空、白区域的大小像素数。</p>
+          <p>[品质]下拉列表：在影片播放期间控制失真，高品质设置可改善影片的外观。但高品质设置的影片需要较快的处理器才能在屏幕上正确呈现。低品质设置首先会照顾到显示速度，然后才考虑外观。而高品质设置首先照顾到外观，然后再考虑显示速度。自动低频就会首先照顾到显示速度，但会在可能的情况下改善外观，自动高品质，开始时会同时照顾显示速度和外观。但以后可能会根据需要牺牲外观以确保速度。</p>
+          <p>[比例]下拉列表：设定影片如何适合在宽度和高度文本框中设置的尺寸，默认设置为显示整个影片。</p>
+          <p>[对齐]下拉列表:设置影片在页面上的对齐方式。</p>
+          <p>WMODE选项:Wwf文件设置mode。参数以避免与HTML元素，(例如spry构件相冲突。默认值是不透明的这样在浏览器中dh html元素就可以显示在s wf文件的上面。如果SWF文件包括透明度，并且希望dhtMl元素显示在他们的后面，可以选择透明选项，选择窗口选项可以从代码中删除。Wmode参数，并允许swf件显示在其他DHTML元素的上面。</p>
+          <h4>3.4为网页添加音频</h4>
+          <h4>3.4.1网页音频文件格式</h4>
+          <p>.midi或.mid:许多浏览器都支持midi文件，并且不需要插件。音质非常好。很小的midi文件就可以提供教程的声音剪辑，但不能进行录制。并且必须使用特殊的硬件和软件在计算机上合成。</p>
+          <p>.WAV:具有良好的音质，许多浏览器都支持此类格式文件，并且不需要插件可以录制，但是文件较大。</p>
+          <p>.AIF:AIfF格式与WAV格式类似，具有较好的音质，大多数浏览器都可以播放它，并且不需要插件，可以录制，但文件较大。</p>
+          <p>.MP3:一种声音文件的压缩格式，可是声音文件明显缩小，音质非常好。</p>
+          <p>.ra、.ram、或real audio文件：具有非常高的压缩度，文件小于.mp3。歌曲文件可以在合理的时间范围内下载安，必须，必须下载安装real-player辅助应用程序才可以播放。</p>
+          <h4>3.4.2添加背景音乐</h4>
+          <p>添加背景音乐的方法有两种，通过标签来添加，通过<em bed="">标签来添加。 使用标签 ：</em></p>
+          <p><em bed="">切换到代码视图，在&lt;\body&gt;之间输入标签,在标签内有五个属性:delay是播放的延迟设置；loop代表循环次数（loop=-1表示无限循环）；src则是音乐文件的路径；volume 是音量设置。一般不会对音乐进行左右均衡以及延迟时等设置。</em></p>
+          <p>&nbsp;</p>
+          <p>&nbsp; </p>
+        </div>
+        <div id="tabs-4">
+          <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','../2.gif',1)"><img src="../2.gif" alt="" width="500" height="281" usemap="#Map"/><img src="../1.gif" alt="" width="500" height="281" id="Image1"></a></p>
+        </div>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="36" align="center" style="color: #FF0004; text-shadow: 4px 4px 3px;">第八代火影官方授权</td>
+    </tr>
+  </tbody>
+</table>
+<map name="Map">
+  <area shape="circle" coords="340,105,54" href="fame.html">
+  <area shape="circle" coords="321,231,39" href="p3-1.html">
+</map>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs({
+		event:"mouseover"
+	}); 
+});
+</script>
+</body>
+</html>
